@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   constructor() { }
+  usuario: string = '';
+  pass: string = '';
+
+  Entrar()
+  {
+    console.log(this.usuario + ' ' +this.pass);
+  }
 
   ngOnInit() {
   }

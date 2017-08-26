@@ -1,3 +1,23 @@
-<p>
-  login works!
-</p>
+  <form>
+
+  <div class="container">
+    <label><b>Usuario</b></label>
+    <input type="text" placeholder="Usuario" name="usuario" [(ngModel)]="usuario" required>
+  </div>
+  <div class="container">  
+    <label><b>Contraseña</b></label>
+    <input type="password" placeholder="Clave" name="pass" [(ngModel)]="pass" required>
+    </div>
+    <div class="container">
+    <button (click)="Entrar()">Entrar</button> <!--chequeo con el f12, en la consola!-->
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+{{usuario}} 
+{{pass}} 
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button> 
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+
